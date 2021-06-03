@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<!-- spring bootの設定情報群 バージョンアップするなら versionを変更する -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.5.0</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.example</groupId>
+	<artifactId>hajiboot</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>hajiboot</name>
+	<description>Demo project for Spring Boot</description>
+	<properties>
+		<!-- Javaのバージョン -->
+		<java.version>11</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<!-- spring bootでwebアプリケーションを作るための基本的なライブラリの依存情報
+		   これだけでwebアプリケーションを作るためのspring frameworkのライブラリやサードパーティ・ライブラリが利用できる-->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
+		<!-- 動的にコードの変更を反映する  --> 
+		<dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-devtools</artifactId>
+	        <optional>true</optional>
+   		</dependency>
+
+		<dependency>
+			<!-- ユニットテストするための基本的なライブラリの依存情報 -->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<!-- spring bootのアプリケーションを簡単に実行し、ビルドするためのmavenプラグイン -->
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
