@@ -12,6 +12,6 @@ https://qiita.com/devzip8/items/28ac253ea295ad6c2b73
 
 ローカルURL: http://localhost:8080/
 
-
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 Macでポートを開いてるプロセスをkillする方法
 https://qiita.com/narikei/items/cd39cb9f64424d95f329
